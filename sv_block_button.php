@@ -94,12 +94,8 @@
 			return $this;
 		}
 		public function enqueue_scripts(): sv_block_button {
-			if( ! is_admin() ) {
-				$post = get_post();
-
-				if ( !has_block( 'paragraph', $post )) {
-					return $this;
-				}
+			if(!$this->has_block_frontend('button')){
+				return $this;
 			}
 
 			$this->get_script( 'common' )->set_is_enqueued();
