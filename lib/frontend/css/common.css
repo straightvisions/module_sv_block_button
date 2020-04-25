@@ -1,0 +1,4 @@
+.wp-block-button.is-style-outline > .wp-block-button__link {
+	background-color: transparent;
+	border: 2px solid;
+}
