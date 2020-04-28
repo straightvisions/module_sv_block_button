@@ -1,4 +1,7 @@
-.wp-block-button.is-style-outline > .wp-block-button__link {
-	background-color: transparent;
+.wp-block-button.is-style-outline:not(:hover) > .wp-block-button__link {
+	background-color: transparent !important;
 	border: 2px solid;
+}
+.wp-block-button.is-style-outline:hover > .wp-block-button__link {
+	transition: background-color .25s ease-in-out;
 }
