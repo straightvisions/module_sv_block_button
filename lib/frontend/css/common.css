@@ -5,3 +5,7 @@
 .wp-block-button.is-style-outline:hover > .wp-block-button__link {
 	transition: background-color .25s ease-in-out;
 }
+
+.wp-block-buttons.alignright .wp-block-button{ /* fix default gutenberg style */
+	margin-right:0;
+}
