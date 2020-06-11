@@ -8,4 +8,5 @@
 
 .wp-block-buttons.alignright .wp-block-button{ /* fix default gutenberg style */
 	margin-right:0;
+	white-space:pre;
 }
