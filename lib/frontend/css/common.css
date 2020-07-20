@@ -10,3 +10,11 @@
 	margin-right:0;
 	white-space:pre;
 }
+.wp-block-buttons.alignright{
+	float: right;
+	margin-left:20px;
+}
+.wp-block-buttons.alignleft{
+	float: left;
+	margin-right:20px;
+}
