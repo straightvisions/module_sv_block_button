@@ -6,6 +6,10 @@
 	transition: background-color .25s ease-in-out;
 }
 
+.wp-block-buttons.aligncenter .wp-block-button{ /* fix default gutenberg style */
+	margin:0 10px 0 10px;
+}
+
 .wp-block-buttons.alignright .wp-block-button{ /* fix default gutenberg style */
 	margin-right:0;
 	white-space:pre;
