@@ -1,3 +1,7 @@
+.wp-block-buttons{
+	width:100%;
+}
+
 .wp-block-button.is-style-outline:not(:hover) > .wp-block-button__link {
 	background-color: transparent !important;
 	border: 2px solid;
