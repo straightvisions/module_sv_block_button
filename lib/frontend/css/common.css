@@ -13,19 +13,20 @@
 	color:inherit;
 }
 
-.wp-block-buttons.aligncenter .wp-block-button{ /* fix default gutenberg style */
-	margin:0 10px 0 10px;
+.wp-block-buttons.aligncenter{
+	float: none;
+	justify-content:center; /* flex support (e.g. columns) */
 }
 
-.wp-block-buttons.alignright .wp-block-button{ /* fix default gutenberg style */
-	margin-right:0;
-	white-space:pre;
-}
 .wp-block-buttons.alignright{
-	float: right;
-	margin-left:20px;
+	justify-content:flex-end; /* flex support (e.g. columns) */
 }
+
 .wp-block-buttons.alignleft{
-	float: left;
-	margin-right:20px;
+	justify-content:flex-start; /* flex support (e.g. columns) */
+}
+
+/* gutenberg default style fix */
+.wp-block-buttons.alignright .wp-block-button{
+	margin-left:0;
 }
