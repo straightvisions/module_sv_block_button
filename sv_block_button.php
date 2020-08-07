@@ -79,6 +79,14 @@
 
 		protected function register_scripts(): sv_block_button {
 			// Register Styles
+			$this->get_script('block')
+				->set_path('lib/backend/js/block.js')
+				->set_type('js')
+				->set_is_gutenberg()
+				->set_is_backend()
+				->set_deps(array('wp-blocks', 'wp-dom'))
+				->set_is_enqueued();
+
 			$this->get_script( 'common' )
 				->set_is_gutenberg()
 				->set_path( 'lib/frontend/css/common.css' );
@@ -87,6 +95,10 @@
 				->set_path( 'lib/frontend/css/config.php' )
 				->set_is_gutenberg()
 				->set_inline( true );
+
+			$this->get_script( 'style_shadow_1' )
+				->set_is_gutenberg()
+				->set_path( 'lib/frontend/css/style_shadow_1.css' );
 
 			add_action('wp', array($this,'enqueue_scripts'));
 			add_action('admin_init', array($this,'enqueue_scripts'));
@@ -98,8 +110,9 @@
 				return $this;
 			}
 
-			$this->get_script( 'common' )->set_is_enqueued();
-			$this->get_script( 'config' )->set_is_enqueued();
+			foreach($this->get_scripts() as $script){
+				$script->set_is_enqueued();
+			}
 
 			return $this;
 		}
