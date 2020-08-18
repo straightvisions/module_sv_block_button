@@ -31,3 +31,9 @@
 .wp-block-buttons.alignright .wp-block-button{
 	margin-left:0;
 }
+.wp-block-buttons .wp-block-button:last-child{
+	margin-right:0;
+}
+.wp-block-buttons .wp-block-button:first-child{
+	margin-left:0;
+}
