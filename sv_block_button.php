@@ -100,6 +100,10 @@
 				->set_is_gutenberg()
 				->set_path( 'lib/frontend/css/style_shadow_1.css' );
 
+			$this->get_script( 'w100' )
+				->set_is_gutenberg()
+				->set_path( 'lib/frontend/css/w100.css' );
+
 			add_action('wp', array($this,'enqueue_scripts'));
 			add_action('admin_init', array($this,'enqueue_scripts'));
 

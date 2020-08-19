@@ -1,0 +1,4 @@
+.wp-block-button.is-style-w100 *{
+	width:100%;
+	margin-bottom:0 !important;
+}
