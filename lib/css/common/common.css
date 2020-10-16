@@ -17,8 +17,12 @@
 	justify-content: flex-start; /* flex support (e.g. columns) */
 }
 
+/* Outline */
+.wp-block-button.is-style-outline > .wp-block-button__link:not(.has-background) {
+	background-color: transparent;
+}
+
 /* Gutenberg - Default style fix */
-/*
 .wp-block-buttons.alignright .wp-block-button {
 	margin-left: 0;
 }
@@ -28,4 +32,3 @@
 .wp-block-buttons .wp-block-button:first-child {
 	margin-left: 0;
 }
-*/
