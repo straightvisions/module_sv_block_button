@@ -39,7 +39,8 @@
 	echo $_s->build_css(
 		is_admin() ? '.editor-styles-wrapper .wp-block-button.is-style-outline > .wp-block-button__link:not(.has-text-color)' : '.sv100_sv_content_wrapper article .wp-block-button.is-style-outline > .wp-block-button__link:not(.has-text-color)',
 		array_merge(
-			$module->get_setting('text_color')->get_css_data(),
-			$module->get_setting('text_color')->get_css_data('background-color')
+			$module->get_setting('bg_color')->get_css_data('color'),
+			$module->get_setting('text_color')->get_css_data('background-color'),
+			$module->get_setting('bg_color')->get_css_data('border-color')
 		)
 	);

@@ -17,15 +17,21 @@
 	justify-content: flex-start; /* flex support (e.g. columns) */
 }
 
-/* Gutenberg - Default style fix */
-/*
-.wp-block-buttons.alignright .wp-block-button {
-	margin-left: 0;
+/* No border radius per default */
+.editor-styles-wrapper .wp-block-button > .wp-block-button__link,
+.sv100_sv_content_wrapper article .wp-block-button > .wp-block-button__link{
+	border-radius:0;
 }
-.wp-block-buttons .wp-block-button:last-child {
-	margin-right: 0;
+
+/* Default Border for Outline Style */
+.editor-styles-wrapper .wp-block-button.is-style-outline > .wp-block-button__link,
+.sv100_sv_content_wrapper article .wp-block-button.is-style-outline > .wp-block-button__link{
+	border-width:1px;
+	border-style:solid;
 }
-.wp-block-buttons .wp-block-button:first-child {
-	margin-left: 0;
+
+.editor-styles-wrapper .wp-block-buttons,
+.editor-styles-wrapper .wp-block-buttons .block-editor-inner-blocks,
+.editor-styles-wrapper .wp-block-buttons .block-editor-inner-blocks .block-editor-block-list__layout{
+	width:100% !important;
 }
-*/

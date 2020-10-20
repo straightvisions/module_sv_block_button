@@ -1,7 +1,10 @@
 .wp-block-button.is-style-w100{
 	margin:8px auto 0 auto !important;
 }
-.wp-block-button.is-style-w100 *{
-	width:100%;
+.editor-styles-wrapper .wp-block-button.is-style-w100,
+.editor-styles-wrapper .wp-block-button.is-style-w100 > .wp-block-button__link,
+.sv100_sv_content_wrapper article .wp-block-button.is-style-w100,
+.sv100_sv_content_wrapper article .wp-block-button.is-style-w100 > .wp-block-button__link{
+	width:100% !important;
 	margin:0 !important;
 }
