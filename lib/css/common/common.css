@@ -17,17 +17,10 @@
 	justify-content: flex-start; /* flex support (e.g. columns) */
 }
 
-/* No border radius per default */
+/* Border Defaults */
 .editor-styles-wrapper .wp-block-button > .wp-block-button__link,
 .sv100_sv_content_wrapper article .wp-block-button > .wp-block-button__link{
 	border-radius:0;
-}
-
-/* Default Border for Outline Style */
-.editor-styles-wrapper .wp-block-button.is-style-outline > .wp-block-button__link,
-.sv100_sv_content_wrapper article .wp-block-button.is-style-outline > .wp-block-button__link{
-	border-width:1px;
-	border-style:solid;
 }
 
 .editor-styles-wrapper .wp-block-buttons,

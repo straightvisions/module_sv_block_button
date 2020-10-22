@@ -61,6 +61,23 @@
 			$this->get_setting( 'border' )
 				->set_title( __( 'Border', 'sv100' ) )
 				->set_is_responsive(true)
+				->set_default_value(
+					array(
+						'top_width'					=> '1px',
+						'right_width'				=> '1px',
+						'bottom_width'				=> '1px',
+						'left_width'				=> '1px',
+						'top_style'					=> 'solid',
+						'right_style'				=> 'solid',
+						'bottom_style'				=> 'solid',
+						'left_style'				=> 'solid',
+						'top_right_radius'			=> 0,
+						'bottom_right_radius'		=> 0,
+						'bottom_left_radius'		=> 0,
+						'top_left_radius'			=> 0,
+						'color'						=> '30,30,30,1'
+					)
+				)
 				->load_type( 'border' );
 
 			return $this;
