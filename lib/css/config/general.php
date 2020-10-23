@@ -53,7 +53,7 @@
 				: '.sv100_sv_content_wrapper article .wp-block-button:not(.is-style-outline) > .wp-block-button__link.has-'.$color['slug'].'-background-color{'
 			;
 
-			echo 'border-color:rgba('.$color['color'].') !important;';
+			echo 'border-color:rgba('.$color['color'].');';
 
 			echo '}';
 		}
@@ -64,7 +64,7 @@
 				: '.sv100_sv_content_wrapper article .wp-block-button.is-style-outline > .wp-block-button__link.has-'.$color['slug'].'-color{'
 			;
 
-			echo 'border-color:rgba('.$color['color'].') !important;';
+			echo 'border-color:rgba('.$color['color'].');';
 
 			echo '}';
 		}
