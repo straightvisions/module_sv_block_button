@@ -43,3 +43,29 @@
 			$module->get_setting('text_color')->get_css_data('background-color')
 		)
 	);
+
+	if($module->get_module('sv_colors')){
+		$colors		= $module->get_module('sv_colors')->get_list();
+
+		foreach($colors as $color){
+			echo is_admin()
+				? '.editor-styles-wrapper .wp-block-button:not(.is-style-outline) > .wp-block-button__link.has-'.$color['slug'].'-background-color{'
+				: '.sv100_sv_content_wrapper article .wp-block-button:not(.is-style-outline) > .wp-block-button__link.has-'.$color['slug'].'-background-color{'
+			;
+
+			echo 'border-color:rgba('.$color['color'].') !important;';
+
+			echo '}';
+		}
+
+		foreach($colors as $color){
+			echo is_admin()
+				? '.editor-styles-wrapper .wp-block-button.is-style-outline > .wp-block-button__link.has-'.$color['slug'].'-color{'
+				: '.sv100_sv_content_wrapper article .wp-block-button.is-style-outline > .wp-block-button__link.has-'.$color['slug'].'-color{'
+			;
+
+			echo 'border-color:rgba('.$color['color'].') !important;';
+
+			echo '}';
+		}
+	}
