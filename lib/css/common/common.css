@@ -28,3 +28,17 @@
 .editor-styles-wrapper .wp-block-buttons .block-editor-inner-blocks .block-editor-block-list__layout{
 	width:100% !important;
 }
+
+/* Justification */
+.block-editor .wp-block-buttons.is-content-justification-left,
+.wp-block-buttons.is-content-justification-left {
+	justify-content: flex-start;
+}
+.block-editor .wp-block-buttons.is-content-justification-center,
+.wp-block-buttons.is-content-justification-center {
+	justify-content: center;
+}
+.block-editor .wp-block-buttons.is-content-justification-right,
+.wp-block-buttons.is-content-justification-right {
+	justify-content: flex-end;
+}
