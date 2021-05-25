@@ -10,14 +10,6 @@
 	transition: background-color .2s,color .2s,outline .2s;
 }
 
-/* Misc */
-.wp-block-button:not(.is-style-outline) .wp-block-button__link:hover,
-.wp-block-button:not(.is-style-outline) .wp-block-button__link:active {
-	border-color: currentColor !important;
-	background-color: transparent !important;
-	color: inherit !important;
-}
-
 .wp-block-button.is-style-outline .wp-block-button__link:not(:hover):not(:active):not(.has-text-color),
 .wp-block-button.is-style-outline .wp-block-button__link:not(:hover):not(:active):not(.has-background),
 .wp-block-button.is-style-outline .wp-block-button__link:not(:hover):not(:active).has-background {
