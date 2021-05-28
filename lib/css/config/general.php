@@ -84,7 +84,7 @@
 			'.editor-styles-wrapper .has-background .wp-block-button.is-style-outline .wp-block-button__link:hover, .editor-styles-wrapper .has-background .wp-block-button.is-style-outline .wp-block-button__link:active' :
 			'.sv100_sv_content_wrapper article .has-background .wp-block-button.is-style-outline .wp-block-button__link:hover, .sv100_sv_content_wrapper article .has-background .wp-block-button.is-style-outline .wp-block-button__link:active',
 		array_merge(
-			$module->get_setting('text_color')->get_css_data('color')
+			$module->get_setting('text_color')->get_css_data('background-color')
 		)
 	);
 
