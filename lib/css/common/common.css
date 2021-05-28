@@ -24,12 +24,6 @@
 	background-color: transparent;
 }
 
-.wp-block-button.is-style-outline .wp-block-button__link:hover:not(.has-background),
-.wp-block-button.is-style-outline .wp-block-button__link:active:not(.has-background)
-{
-	border-color: transparent !important;
-}
-
 .wp-block-button .is-style-squared .wp-block-button__link {
 	border-radius: 0;
 }
