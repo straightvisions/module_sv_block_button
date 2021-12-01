@@ -90,9 +90,9 @@
 				->set_is_gutenberg()
 				->set_path( 'lib/css/common/style_shadow_1.css' );
 
-			$this->get_script( 'w100' )
+			$this->get_script( 'no_border' )
 				->set_is_gutenberg()
-				->set_path( 'lib/css/common/w100.css' );
+				->set_path( 'lib/css/common/style_no_border.css' );
 
 			return $this;
 		}
