@@ -6,7 +6,6 @@
 	cursor: pointer;
 	display: inline-block;
 	font-size: 1.125em;
-	padding: calc(0.667em + 2px) calc(1.333em + 2px);
 	text-align: center;
 	text-decoration: none;
 	overflow-wrap: break-word;
@@ -80,8 +79,7 @@
 
 .is-style-outline > .wp-block-button__link,
 .wp-block-button__link.is-style-outline {
-	border: 2px solid currentColor;
-	padding: 0.667em 1.333em;
+	border-color: currentColor;
 }
 
 .is-style-outline > .wp-block-button__link:not(.has-text-color),
