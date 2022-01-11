@@ -94,6 +94,10 @@
 				->set_is_gutenberg()
 				->set_path( 'lib/css/common/style_no_border.css' );
 
+			$this->get_script( 'no_horizontal_padding' )
+				->set_is_gutenberg()
+				->set_path( 'lib/css/common/style_no_horizontal_padding.css' );
+
 			return $this;
 		}
 		public function enqueue_scripts(): sv_block_button {
