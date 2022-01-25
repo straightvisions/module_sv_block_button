@@ -33,3 +33,9 @@
 	outline-offset: 2px;
 	outline: 2px dotted;
 }
+
+.wp-block-button img{
+	height:fit-content;
+	width: auto !important;
+	vertical-align: text-bottom;
+}
