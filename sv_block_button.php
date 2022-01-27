@@ -90,11 +90,11 @@
 				->set_is_gutenberg()
 				->set_path( 'lib/css/common/style_shadow_1.css' );
 
-			$this->get_script( 'no_border' )
+			$this->get_script( 'style_no_border' )
 				->set_is_gutenberg()
 				->set_path( 'lib/css/common/style_no_border.css' );
 
-			$this->get_script( 'no_horizontal_padding' )
+			$this->get_script( 'style_no_horizontal_padding' )
 				->set_is_gutenberg()
 				->set_path( 'lib/css/common/style_no_horizontal_padding.css' );
 
