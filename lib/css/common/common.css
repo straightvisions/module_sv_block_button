@@ -38,4 +38,5 @@
 	height:fit-content;
 	width: auto !important;
 	vertical-align: text-bottom;
+	max-width:100%;
 }
