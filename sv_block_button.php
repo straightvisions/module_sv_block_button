@@ -48,6 +48,18 @@
 				->set_is_responsive(true)
 				->load_type( 'color' );
 
+			$this->get_setting( 'outline_text_color' )
+				->set_title( __( 'Text Color', 'sv100' ) )
+				->set_default_value( '255,255,255,1' )
+				->set_is_responsive(true)
+				->load_type( 'color' );
+
+			$this->get_setting( 'outline_bg_color' )
+				->set_title( __( 'Background Color', 'sv100' ) )
+				->set_default_value( '30,30,30,1' )
+				->set_is_responsive(true)
+				->load_type( 'color' );
+
 			$this->get_setting( 'margin' )
 				->set_title( __( 'Margin', 'sv100' ) )
 				->set_is_responsive(true)
