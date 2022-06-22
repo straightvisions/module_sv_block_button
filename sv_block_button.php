@@ -12,6 +12,7 @@
 				->set_section_order(5000)
 				->set_section_icon('<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" fill-rule="evenodd" clip-rule="evenodd"><path serif:id="shape 4" d="M22 0c1.104 0 2 .896 2 2v20c0 1.104-.896 2-2 2h-20c-1.104 0-2-.896-2-2v-20c0-1.104.896-2 2-2h20zm0 2.75c0-.413-.335-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75v18.5c0 .415.337.75.75.75h18.5c.414 0 .75-.336.75-.75v-18.5z"/></svg>')
 				->set_block_handle('wp-block-button')
+				->set_block_name('core/button')
 				->get_root()
 				->add_section( $this );
 		}
@@ -92,24 +93,6 @@
 					)
 				)
 				->load_type( 'border' );
-
-			return $this;
-		}
-
-		protected function register_scripts(): sv_block_button {
-			parent::register_scripts();
-
-			$this->get_script( 'style_shadow_1' )
-				->set_is_gutenberg()
-				->set_path( 'lib/css/common/style_shadow_1.css' );
-
-			$this->get_script( 'style_no_border' )
-				->set_is_gutenberg()
-				->set_path( 'lib/css/common/style_no_border.css' );
-
-			$this->get_script( 'style_no_horizontal_padding' )
-				->set_is_gutenberg()
-				->set_path( 'lib/css/common/style_no_horizontal_padding.css' );
 
 			return $this;
 		}
