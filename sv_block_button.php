@@ -16,7 +16,24 @@
 				->get_root()
 				->add_section( $this );
 		}
+		protected function register_scripts(): sv_block_button {
+			parent::register_scripts();
 
+			$this->get_script('buttons')
+			     ->set_path('lib/css/common/buttons.css')
+			     ->set_is_gutenberg()
+			     ->set_inline();
+
+			if(!is_admin()) {
+				add_action( 'wp_enqueue_scripts', function () { wp_dequeue_style( 'wp-block-buttons' ); } );
+			}else{
+				$this->get_script('buttons')
+					 ->set_ID('wp-block-buttons')
+				     ->set_is_no_prefix();
+			}
+
+			return $this;
+		}
 		protected function load_settings(): sv_block_button {
 			$this->get_setting( 'font' )
 				->set_title( __( 'Font Family', 'sv100' ) )
