@@ -45,7 +45,6 @@
 			$this->get_setting( 'font_size' )
 				->set_title( __( 'Font Size', 'sv100' ) )
 				->set_description( __( 'Font Size in pixel.', 'sv100' ) )
-				->set_default_value( 18 )
 				->set_is_responsive(true)
 				->load_type( 'number' );
 
