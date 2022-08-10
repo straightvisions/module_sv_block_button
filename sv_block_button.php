@@ -35,6 +35,13 @@
 			return $this;
 		}
 		protected function load_settings(): sv_block_button {
+			$this->get_setting( 'gap' )
+			     ->set_title( __( 'Gap', 'sv100' ) )
+			     ->set_description( __( 'Gap between Buttons', 'sv100' ) )
+			     ->set_is_responsive(true)
+				 ->set_default_value(20)
+			     ->load_type( 'number' );
+
 			$this->get_setting( 'font' )
 				->set_title( __( 'Font Family', 'sv100' ) )
 				->set_description( __( 'Choose a font for your text.', 'sv100' ) )

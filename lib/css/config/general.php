@@ -1,4 +1,11 @@
 <?php
+	echo $_s->build_css(
+		'.wp-block-buttons',
+		array_merge(
+			$module->get_setting('gap')->get_css_data('gap','','px')
+		)
+	);
+
 	/*
 	 * not outline
 	 * not hover
