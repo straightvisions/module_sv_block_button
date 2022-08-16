@@ -1,6 +1,7 @@
 /* Transition */
 .wp-block-button .wp-block-button__link{
 	transition: background-color .2s,color .2s,outline .2s;
+	text-decoration:none;
 }
 
 .wp-block-button.is-style-outline .wp-block-button__link:not(:hover):not(:active):not(.has-text-color),
