@@ -44,7 +44,7 @@
 		)
 	);
 
-	// Spacing & Border
+	// Spacing
 	echo $_s->build_css(
 		'.wp-block-button',
 		array_merge(
@@ -64,8 +64,7 @@
 	echo $_s->build_css(
 		'.wp-block-buttons .wp-block-button > .wp-block-button__link',
 		array_merge(
-			$module->get_setting('padding')->get_css_data('padding'),
-			$module->get_setting('border')->get_css_data()
+			$module->get_setting('padding')->get_css_data('padding')
 		)
 	);
 

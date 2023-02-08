@@ -63,25 +63,21 @@
 
 			$this->get_setting( 'text_color' )
 				->set_title( __( 'Text Color', 'sv100' ) )
-				->set_default_value( '255,255,255,1' )
 				->set_is_responsive(true)
 				->load_type( 'color' );
 
 			$this->get_setting( 'bg_color' )
 				->set_title( __( 'Background Color', 'sv100' ) )
-				->set_default_value( '30,30,30,1' )
 				->set_is_responsive(true)
 				->load_type( 'color' );
 
 			$this->get_setting( 'outline_text_color' )
 				->set_title( __( 'Text Color', 'sv100' ) )
-				->set_default_value( '255,255,255,1' )
 				->set_is_responsive(true)
 				->load_type( 'color' );
 
 			$this->get_setting( 'outline_bg_color' )
 				->set_title( __( 'Background Color', 'sv100' ) )
-				->set_default_value( '30,30,30,1' )
 				->set_is_responsive(true)
 				->load_type( 'color' );
 
@@ -94,28 +90,6 @@
 				->set_title( __( 'Padding', 'sv100' ) )
 				->set_is_responsive(true)
 				->load_type( 'margin' );
-
-			$this->get_setting( 'border' )
-				->set_title( __( 'Border', 'sv100' ) )
-				->set_is_responsive(true)
-				->set_default_value(
-					array(
-						'top_width'					=> '1px',
-						'right_width'				=> '1px',
-						'bottom_width'				=> '1px',
-						'left_width'				=> '1px',
-						'top_style'					=> 'solid',
-						'right_style'				=> 'solid',
-						'bottom_style'				=> 'solid',
-						'left_style'				=> 'solid',
-						'top_right_radius'			=> 0,
-						'bottom_right_radius'		=> 0,
-						'bottom_left_radius'		=> 0,
-						'top_left_radius'			=> 0,
-						'color'						=> '30,30,30,1'
-					)
-				)
-				->load_type( 'border' );
 
 			return $this;
 		}
